@@ -2,55 +2,59 @@
     <head>
         <meta charset="uft-8">
         <title>Wustl Practise</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="main">
-            <header>
-                <nav id="topDic">
-                    <span id="lDic">
-                        <a class="dictionary" href="">Apply</a>
-                        <a class="dictionary" href="">Visit</a>
-                        <a class="dictionary" href="">Give</a>
+        
+        <header>
+                <nav class="topDic">
+                    <span class="lDic">
+                        <a  href="">Apply</a>
+                        <a  href="">Visit</a>
+                        <a  href="">Give</a>
                     </span>
-                    <span id="rDic"><a class="dictionary" href="">Dictionary</a> | <a class="dictionary" href="">WU Physicians</a></span> 
+                    <span class="rDic"><a href="">Dictionary</a> | <a href="">WU Physicians</a></span> 
                 </nav>
-                <nav id="navigator">
-                    <ul class="inList" id="navList">
-                        <p class="inList"><img src="washu-logo.svg" alt="head logo"  id="logo"></p>
-                        <ul class="innerUl">Academics
-                        
-                        </ul>
-                        <ul class="innerUl">Research
-                            <li class="inList">Research By School</li>
-                            <li class="inList">Medical Research</li>
-                        </ul>
-                        <ul class="innerUl">Campus Experience</ul>
-                        <ul class="innerUl">Who We Are</ul>
+                <nav class="navigator">
+                    <p class="inList"><img src="images/washu-logo.svg" alt="head logo"  id="logo"></p>
+                    <ul>
+                        <li>Academics
+                            <ul>
+                               <li>aaa</li>
+                               <li>bbb</li>
+                            </ul>
+                        </li>
+                        <li>Research
+                            <!-- <li class="inList">Research By School</li>
+                            <li class="inList">Medical Research</li> -->
+                        </li>
+                        <li>Campus Experience</li>
+                        <li>Who We Are</li>
                         <!--<ul class="inList"> <input type="search"></ul>-->
                     </ul>
                    
                 </nav>
-            </header>
-            
-            <div id="content">
-                <div id="secAbout" class="big">
-                    <div id="extraCont">
-                            <ul><a href="" id="exTitle">Campus Experience</a><hr>
-                                <li class="exItem"><a href="" class="exItem">About St.Louis</a></li><hr>
-                                <li class="exItem"><a href="" class="exItem">Social Meida Hub</a></li><hr>
-                                <li class="exItem"><a href="" class="exItem">Arts and Culture</a></li><hr>
-                                <li class="exItem"><a href="" class="exItem">Technology</a></li><hr>
-                                <li class="exItem"><a href="" class="exItem">Veterans and Military</a></li><hr>
-                                <li class="exItem"><a href="" class="exItem">Advising and Career Assistance</a></li><hr>
-                            </ul>
-                    </div>
+        </header>   
+          <div class="extraCont">
+                 <ul class="exList"><a href="">Campus <br>Experience</a><hr>
+                    <li><a href="" >About St.Louis</a></li><hr>
+                    <li><a href="" >Social Meida Hub</a></li><hr>
+                    <li><a href="" >Arts and Culture</a></li><hr>
+                    <li><a href="" >Technology</a></li><hr>
+                    <li><a href="" >Veterans and Military</a></li><hr>
+                    <li><a href="" >Advising and Career Assistance</a></li><hr>
+                </ul>
+          </div>
+        <div>
+            <div class="content">
+                <div>  
                     <article id="about">
                         <h1>About St. Louis</h1> 
                         
-                        <p id="intro">Washington University has grown to be a world-class
-                           research university with our roots firmly in St. Louis.</p>
-                        <p><img src="arch.jpg" alt="a picture of the arch in the evening" width="100%"></p>
+                        <h2 id="intro">Washington University has grown to be a world-class
+                           research university with our roots firmly in St. Louis.</h2>
+                        <p><img src="images/arch.jpg" alt="a picture of the arch in the evening" width="100%"></p>
                         <p>We have come together throughout our mutual history, 
                            creating benefits and opportunities for everyone in the community.</p>
                         <p>St. Louis is a national hub for important research and business development, 
@@ -59,16 +63,14 @@
                             and other innovative and creative professionals here are working 
                             at the forefront of a multitude of fields and endeavors.</p>       
                         <hr>
-                    </article>
-                   
-                    
+                    </article>  
                 </div>
                 
-                <div id="secLiving" class="big">
+                <div>
                     <article id="living">
                         <h2>Living in St. Louis</h2>
                         <div id="lofts">
-                            <img src="lofts.jpg" alt="two students from lofts" width="100%">
+                            <img src="images/lofts.jpg" alt="two students from lofts" width="100%">
                             <div id="livQuote">
                               <p class="quote">“St. Louis is a very livable city, offering an array of diverse opportunities without being overwhelming.”</p>
                               <p class="cite">– Marion Crain, Wiley B. Rutledge Professor of Law</p>
@@ -87,12 +89,12 @@
                     </article>  
                 </div>
                
-                <div id="secInspire" class="big">
+                <div>
                     <article id="inspiration">
                         <h2>Inspiration, Education, Recreation</h2>
                         <p>There are more free, world-class attractions in St. Louis than any place in the nation outside of Washington, D.C.</p>
                         <div>
-                            <img src="museum.jpg" alt="St. Louis Art Museum" width="50%" id="museum">
+                            <img src="images/museum.jpg" alt="St. Louis Art Museum" width="50%" id="museum">
                             <p id="disc">Forest Park, the 1,400-acre park located between the Danforth and Medical campuses,
                                offers space for a wide variety of activities. 
                                The historic park was the site of the 1904 World’s Fair and is still home to the Saint Louis Art Museum, 
@@ -111,7 +113,7 @@
                     </article>
                 </div>
                 
-                <div id="secAround" class="big">
+                <div>
                     <article id="around">
                         <h2>Getting Around</h2>
                         <p><a href="https://parking.wustl.edu/commute-options/">Getting where you want to go</a>  in St. Louis is easy.</p>
@@ -123,7 +125,7 @@
                     </article>
                 </div>
                 
-                <div id="secHub" class="big">
+                <div>
                     <article id="hub">
                         <h2>A Hub for Innovation</h2>
                         <p>In 2002, the <a href="http://cortexstl.com/">CORTEX</a> Innovation district was formed by Washington University, BJC HealthCare, University of Missouri–St. Louis, Saint Louis University 
@@ -134,7 +136,7 @@
                     </article>
                 </div>
                 
-                <div id="secInvest" class="big">
+                <div>
                     <article id="invest">
                         <h2>Investing in St. Louis</h2>
                         <p>We are an active part of the St. Louis community, helping to <a href="http://governmentrelations.wustl.edu/academic-civic-engagement/">address community challenges</a> , 
@@ -146,16 +148,18 @@
                         </div>
                     </article>
 
-                </div>
-
-
+                </div>  
             </div>
+            
+
         </div>
+                  
+           
+
         <footer>
             <p><span id="schoolName">Washington University in St. Louis</span> | <span>One Brookings Drive, St. Louis, MO 63130</span></p>
             <p><span><strong>Danforth Campus:</strong> 314-935-5000</span> | <span><strong>Medical Campus:</strong> 314-362-5000</span></p>
-            <!--social media icons-->
-        </footer>
+        </footer> 
     </body>
 
 </html>
