@@ -1,93 +1,96 @@
-
-.main{
+.main {
     background-color: #f6f6f6;
-} 
+}
 
-
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-
 /* header */
-   
-   /* top */
 
+/* top */
 
-.top{
-    background-color:#f6f5f5; 
+.top {
+    background-color: #f6f5f5;
 }
 
-.top>div{    
-    margin: 0 auto;
-    width: 1000px;
+.top>div {
     height: 37px;
     line-height: 37px;
     clear: both;
 }
 
-.top>div>p{
+.top>div>p {
     font-size: 13px;
     margin: 0;
 }
 
-.welcome{
+.welcome {
     float: left;
     padding: 0 0 0 30px;
 }
 
-.number{
+.number {
     float: right;
     padding: 0 55px 0 0;
 }
 
-.number>span{
+.number>span {
     color: #ff7132;
     font-weight: 600;
 }
 
-   /* navigator */
+.containter {
+    margin: 0 auto;
+    width: 1000px;
+}
 
-nav{
+/* navigator */
+
+nav {
     position: relative;
+    height: 106px;
     box-shadow: 0 8px 16px #0000001f;
 }
 
-nav>div{
-    margin: 0 auto;
-    width: 1000px;
+h1.logo {
+    margin: 17px 0 0 0;
+    padding: 0;
+    float: left;
+}
+
+h1.logo a {
+    display: inline-block;
+}
+
+.navList {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.navList>li {
     height: 106px;
     line-height: 106px;
-}
-
-nav>div>img{
-    padding: 21px 0 0 0;
-    float: left;
-}
-
-.navList{
-    margin:0;
-    float: right;
-    padding: 0 35px 0 0;
-}
-
-.navList>li{
     position: relative;
     float: left;
-    padding: 0 20px;
+    text-align: center;
 }
 
-.navList>li>a{ 
-    font-size: 15px;
+.navList>li>a {
+    display: block;
+    width: 106px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
 }
 
-
-.navList>li>img{
+.navList>li>img {
     position: absolute;
     z-index: -1;
     top: 36px;
@@ -95,39 +98,35 @@ nav>div>img{
     display: none;
 }
 
-
-
-.navList>li:hover>a{
+.navList>li:hover a,
+.navList>li.current a {
     color: white;
+    background: url('../images/navbox.png') no-repeat center center;
 }
 
-.navList>li:hover>img{
+.navList>li:hover>img {
     display: block;
 }
 
+/* advertisement */
 
-
-   /* advertisement */
-
-.advertisement img{
+.advertisement img {
     width: 100%;
 }
 
-   /* content */
+/* content */
 
-.content{
-    width: 1000px;
+.content {
     /* height: 688px; */
-    margin: 0 auto;
     padding: 21px 0 28px 0;
     overflow: hidden;
 }
 
-.content p{
+.content p {
     margin: 0;
 }
 
-.content>div>div{
+.content>div>div {
     background-color: white;
     border: 1px solid #e5e5e5;
     margin-bottom: 15px;
@@ -135,18 +134,18 @@ nav>div>img{
 
 /* leftcont */
 
-.leftCont{
+.leftCont {
     width: 704px;
     float: left;
 }
 
-.leftCont ul{
+.leftCont ul {
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
 
-p.subTitle{
+p.subTitle {
     height: 15px;
     border-left: 4px solid #415fa3;
     margin: 17px 0 15px 21px;
@@ -156,65 +155,60 @@ p.subTitle{
     color: #666666;
 }
 
-.youshi>ul{
+.youshi>ul {
     padding: 0 0 32px 4px;
 }
 
-.youshi>p.subTitle{
+.youshi>p.subTitle {
     margin-bottom: 30px;
 }
 
-.youshi>ul>li{
+.youshi>ul>li {
     /* width: 100px; */
-    padding: 0 23px; 
+    padding: 0 23px;
     float: left;
 }
 
-
-.zhanshi>ul{
+.zhanshi>ul {
     display: inline-block;
     padding-bottom: 20px;
 }
 
-.zhanshi>ul>li{
+.zhanshi>ul>li {
     float: left;
     padding: 0 13px;
     /* width: 185px; */
 }
 
-
-
-.zhanshi>div{
+.zhanshi>div {
     height: 123px;
     line-height: 123px;
     margin: 0 auto;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
-.leftArrow{
+.leftArrow {
     float: left;
     padding-left: 20px;
 }
-.rightArrow{
+
+.rightArrow {
     float: right;
     padding-right: 20px;
 }
 
-
-.about>p.subTitle{
+.about>p.subTitle {
     margin-bottom: 23px;
 }
 
-
-.about>div{
+.about>div {
     overflow: hidden;
     width: 655px;
     margin: 0 auto;
     padding: 0 0 25px 0;
 }
 
-
-.about>div>img{
+.about>div>img {
     display: block;
     float: left;
     padding: 5px;
@@ -222,7 +216,7 @@ p.subTitle{
     border: 1px solid #e5e5e5;
 }
 
-.about>div>p{
+.about>div>p {
     float: right;
     width: 452px;
     line-height: 200%;
@@ -230,15 +224,13 @@ p.subTitle{
     /* padding: 0 5px 0 0; */
 }
 
-.about>div>p:first-of-type{
+.about>div>p:first-of-type {
     text-indent: 2em;
 }
 
-
 /* rightcont */
 
-
-.rightCont{
+.rightCont {
     width: 284px;
     float: right;
 }
@@ -247,12 +239,12 @@ p.subTitle{
     overflow: hidden;
 } */
 
-#zuche{
+#zuche {
     height: 70px;
     background-color: #ff7538;
 }
 
-#zuche>a{
+#zuche>a {
     display: block;
     line-height: 70px;
     color: white;
@@ -261,85 +253,81 @@ p.subTitle{
     font-size: 22px;
 }
 
-
-
-
-.more{
+.more {
     display: block;
     float: right;
     color: #6bb2ff;
     font-weight: 500;
-    padding: 0 18px 0 0; 
+    padding: 0 18px 0 0;
 }
 
-.news{
+.news {
     height: 283px;
     font-size: 13px;
 }
 
-.news>ul{
+.news>ul {
     width: 245px;
     margin: 0 auto;
     padding: 0 0 15px 5px;
 }
 
-.news>ul>li{
+.news>ul>li {
     padding: 0 0 18px;
 }
 
-.news>ul>li>span{
+.news>ul>li>span {
     display: block;
     float: right;
 }
 
-.news a:hover{
+.news a:hover {
     text-decoration: underline;
 }
 
-.tujing{
+.tujing {
     height: 310px;
 }
 
-.tujing>p{
+.tujing>p {
     padding: 20px 0 20px 21px;
 }
 
-.tujing>ul{
+.tujing>ul {
     margin: 0;
     padding: 0 0 24px 21px;
 }
 
-.tujing>ul>li{
+.tujing>ul>li {
     height: 40px;
     padding: 0 0 26px;
 }
 
-.tujing>ul>li>img{
+.tujing>ul>li>img {
     display: block;
     float: left;
     padding: 6px 13px 0 0;
 }
 
-.tujing>ul>li>p{
+.tujing>ul>li>p {
     line-height: 20px;
     font-size: 13px;
 }
 
-.tujing>ul>li>p:first-of-type{
+.tujing>ul>li>p:first-of-type {
     font-size: 15px;
     font-weight: 600;
     color: #989898;
 }
 
-.tujing a:hover{
+.tujing a:hover {
     color: #6bb2ff;
     text-decoration: underline;
 }
 
-
 /* footer */
 
-footer{
+footer {
     height: 55px;
     padding: 40px 0 45px 0;
     background-color: #2e313c;
@@ -347,12 +335,12 @@ footer{
     text-align: center;
 }
 
-footer p{
+footer p {
     margin: 0;
     font-size: 13px;
 }
 
-footer p:first-of-type{
+footer p:first-of-type {
     font-size: 15px;
     padding-bottom: 10px;
 }
@@ -362,5 +350,3 @@ footer>div{
     margin: 0 auto;
     width: 488px;
 } */
-
-
