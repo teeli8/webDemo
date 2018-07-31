@@ -147,7 +147,7 @@ nav>ul>li>ul>li{
 nav>ul>li>ul>li:hover{
     background-color: #666;
     text-decoration: underline;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .school{
