@@ -11,6 +11,14 @@ li {
     list-style-type: none;
 }
 
+body{
+    font-family: '微软雅黑';
+}
+
+a,p{
+    color: #666;
+}
+
 /* header */
 
 /* top */
@@ -26,7 +34,7 @@ li {
 }
 
 .top>div>p {
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
 }
 
@@ -71,7 +79,7 @@ h1.logo a {
 .navList {
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 0 30px 0 0;
 }
 
 .navList>li {
@@ -87,7 +95,6 @@ h1.logo a {
     width: 106px;
     text-align: center;
     font-size: 14px;
-    color: #666;
 }
 
 .navList>li>img {
@@ -152,16 +159,15 @@ p.subTitle {
     line-height: 15px;
     padding: 0 0 0 8px;
     font-weight: bolder;
-    color: #666666;
 }
 
 .youshi>ul {
-    padding: 0 0 32px 4px;
+    padding: 15px 0 32px 4px;
 }
 
-.youshi>p.subTitle {
+/* .youshi>p.subTitle {
     margin-bottom: 30px;
-}
+} */
 
 .youshi>ul>li {
     /* width: 100px; */
@@ -185,7 +191,24 @@ p.subTitle {
     line-height: 123px;
     margin: 0 auto;
     padding-top: 10px;
+    position: relative;
 }
+
+.orange{
+    position: absolute;
+    top:54px;
+    display: none;
+}
+
+.zhanshi>div:hover{
+    cursor: pointer;
+}
+
+.zhanshi>div:hover .orange{
+    display: block;
+}
+
+
 
 .leftArrow {
     float: left;
@@ -219,8 +242,8 @@ p.subTitle {
 .about>div>p {
     float: right;
     width: 452px;
-    line-height: 200%;
-    font-size: 13px;
+    line-height: 26px;
+    font-size: 12px;
     /* padding: 0 5px 0 0; */
 }
 
@@ -263,17 +286,17 @@ p.subTitle {
 
 .news {
     height: 283px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .news>ul {
     width: 245px;
     margin: 0 auto;
-    padding: 0 0 15px 5px;
+    padding: 0 0 0 5px;
 }
 
 .news>ul>li {
-    padding: 0 0 18px;
+    line-height: 30px;
 }
 
 .news>ul>li>span {
@@ -300,17 +323,37 @@ p.subTitle {
 
 .tujing>ul>li {
     height: 40px;
-    padding: 0 0 26px;
+    padding: 0 0 17px;
 }
 
-.tujing>ul>li>img {
-    display: block;
+
+
+.tujing>ul>li>div{
+    width:16px;
+    height: 16px;
+    padding: 7px;
+    border-radius: 15px;
     float: left;
-    padding: 6px 13px 0 0;
+    margin: 7px 13px 0 0;
+    text-indent: 1px;
+    line-height: 16px;
+    color: white; 
+    font-weight: bold;
+    font-size: 16px; 
+    font-style: italic;
 }
+
+.odd{
+    background-color: #415fa3;
+}
+
+.even{
+    background-color: #ff9732;
+}
+
 
 .tujing>ul>li>p {
-    line-height: 20px;
+    line-height: 24px;
     font-size: 13px;
 }
 
@@ -337,12 +380,14 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 footer p:first-of-type {
-    font-size: 15px;
-    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 2px;
 }
 
 /* 
